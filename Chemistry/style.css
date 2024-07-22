@@ -1,0 +1,123 @@
+/* General styles for the whole page */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  background: url('Home/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  margin: 0;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #52865a;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  color: #666;
+  font-size: 1.2em;
+}
+
+/* Main section styling */
+main {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main h2 {
+  color: #52865a;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+/* Remove default list styles */
+main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main ul li {
+  margin: 15px 0;
+  /* Added space between buttons */
+}
+
+/* Button styling */
+main ul li a {
+  text-decoration: none;
+}
+
+main ul li button {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: #52865a;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px 25px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+  /* Adding a bit more space around buttons */
+  margin: 5px;
+}
+
+main ul li button:hover {
+  background-color: #2a8d12;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main ul li button:focus {
+  outline: none;
+}
+
+main ul li button {
+  cursor: pointer;
+  /* Ensures cursor changes to hand on hover */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #52865a;
+  font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  main h2 {
+    font-size: 1.5em;
+  }
+
+  main ul li button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,183 @@
+/* General styles for the whole page */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  background: url('Home/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  margin: 0;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #52865a;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  color: #666;
+  font-size: 1.2em;
+}
+
+/* Main section styling */
+main {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feedback-form h2 {
+  color: #52865a;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+/* Form styling */
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.feedback-form button {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #52865a;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px 25px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #2a8d12;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  color: #52865a;
+  font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .feedback-form h2 {
+    font-size: 1.5em;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea,
+  .feedback-form button {
+    font-size: 0.9em;
+  }
+}
+
+/* contact */
+/* General styles for the contact section */
+#contact {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Header inside contact section */
+#contact h2 {
+  color: #52865a;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #52865a;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Paragraph inside contact section */
+#contact p {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Unordered list styling */
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact ul li {
+  margin: 10px 0;
+}
+
+#contact ul li a {
+  color: #52865a;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#contact ul li a:hover {
+  background-color: #52865a;
+  color: #fff;
+}
+
+#contact ul li a:visited {
+  color: #666;
+}
