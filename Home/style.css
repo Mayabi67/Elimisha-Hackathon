@@ -55,6 +55,11 @@ nav ul li a:hover {
   text-align: center;
   flex: 1 0 calc(50% - 20px);
   max-width: calc(50% - 20px);
+
+}
+.image-container img {
+  max-width: 100%; /* Prevents the image from exceeding the container width */
+  height: 100%; /* Maintains aspect ratio */
 }
 
 .image-container .image {
@@ -90,3 +95,11 @@ footer p {
   color: #52865a;
   margin-top: 20px;
 }
+
+/* Optional: Media queries for larger screens */
+/* @media (min-width: 1200px) {
+  .image-container {
+    flex: 1 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+} */
